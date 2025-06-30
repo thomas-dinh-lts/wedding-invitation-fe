@@ -8,7 +8,6 @@ import StoreProvider from '@/providers/StoreProvider';
 import '@ant-design/v5-patch-for-react-19';
 import { App } from 'antd';
 import { Gentium_Plus } from 'next/font/google';
-import Head from 'next/head';
 import './globals.css';
 
 const gentiumPlus = Gentium_Plus({
@@ -25,7 +24,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={gentiumPlus.className}>
-      <Head>
+      <head>
         <title>Phú Tùng & Quỳnh Anh wedding</title>
         <meta property="og:title" content="Phú Tùng & Quỳnh Anh wedding" />
         <meta
@@ -36,7 +35,7 @@ export default function RootLayout({
           property="og:image"
           content="https://geocore-v2-public.s3.ap-southeast-1.amazonaws.com/4.webp"
         />
-      </Head>
+      </head>
       <body>
         <StoreProvider>
           <AuthProvider>
