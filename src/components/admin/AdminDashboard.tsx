@@ -76,6 +76,26 @@ function AdminDashboard() {
         </>
       ),
     },
+    {
+      key: 'NotAttending',
+      label: 'Not attending',
+      children: (
+        <>
+          <div className="font-bold text-2xl mb-4">
+            Bride reception: {rsvp?.data?.notAttendingCount}
+          </div>
+          <Table
+            columns={columns}
+            dataSource={rsvp?.data?.notAttending}
+            loading={isFetching}
+            showHeader
+            rowKey="_id"
+            scroll={{ x: 'max-content' }}
+            pagination={false}
+          />
+        </>
+      ),
+    },
   ];
 
   return (

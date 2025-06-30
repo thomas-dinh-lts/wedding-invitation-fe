@@ -12,4 +12,6 @@ export interface IRSVPResponse {
   groomReceptionCount: number;
   brideReception: IRSVP[];
   brideReceptionCount: number;
+  notAttending: IRSVP[];
+  notAttendingCount: number;
 }
