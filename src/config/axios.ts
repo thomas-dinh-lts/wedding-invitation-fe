@@ -44,6 +44,7 @@ const onRequest = (config: AxiosRequestConfig) => {
         ? {
             Authorization: `Bearer ${(JSON.parse(token) as IToken).IdToken}`,
             'X-Access-Token': (JSON.parse(token) as IToken).AccessToken,
+            'ngrok-skip-browser-warning': 'true',
           }
         : {}),
       'Content-Type': config.headers?.['Content-Type'] || 'application/json',
