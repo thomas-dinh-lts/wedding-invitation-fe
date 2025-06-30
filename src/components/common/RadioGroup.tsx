@@ -35,7 +35,7 @@ function RadioGroup(props: IRadioGroup) {
           >
             <Radio.Group
               {...rest}
-              className="flex flex-col md:flex-row md:gap-24"
+              className="flex flex-col"
               value={field.value || null}
               ref={field.ref}
               onChange={(...agrs) => {

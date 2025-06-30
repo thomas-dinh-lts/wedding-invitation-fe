@@ -27,6 +27,10 @@ function InvitationForm() {
       label: 'Tiệc cưới nhà gái',
       value: '2',
     },
+    {
+      label: 'Không tham dự',
+      value: '3',
+    },
   ];
 
   return (

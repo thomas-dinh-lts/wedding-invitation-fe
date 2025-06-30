@@ -8,7 +8,7 @@ export const useRSVP = (onSuccess?: () => void) => {
     onSuccess: () => {
       onSuccess?.();
       modal.info({
-        content: 'Cảm ơn bạn đã xác nhận tham gia!',
+        content: 'Cảm ơn bạn đã xác nhận thông tin!',
       });
     },
     onError: () => {

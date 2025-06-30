@@ -124,6 +124,28 @@ export default function Home() {
         <Image src="/logo.svg" alt="Logo" fill />
       </div>
       <div className="flex flex-col items-center">
+        <span className={`${loversQuarrel.className} text-9xl my-8`}>Blessing</span>
+        <div className="italic max-w-144 lg:max-w-full text-xl text-center mb-8 px-8">
+          Yêu thương đong đầy, xin gửi về đây.
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+          <div className="relative">
+            <Image src="/blessing_container.svg" alt="Groom blessing" width={400} height={400} />
+            <div className="absolute top-1/7 left-7/20 flex flex-col items-center">
+              <span className="text-xl mb-6">Mừng cưới chú rể</span>
+              <Image src="/groom_blessing.svg" alt="Groom blessing" width={150} height={150} />
+            </div>
+          </div>
+          <div className="relative">
+            <Image src="/blessing_container.svg" alt="Groom blessing" width={400} height={400} className="transform-[scaleX(-1)]" />
+            <div className="absolute top-1/7 right-7/20 flex flex-col items-center">
+              <span className="text-xl mb-6">Mừng cưới cô dâu</span>
+              <Image src="/bribe_blessing.svg" alt="Bribe blessing" width={150} height={150} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center">
         <span className={`${loversQuarrel.className} text-9xl text-center my-8`}>About us</span>
         <div className="italic max-w-144 lg:max-w-full text-xl text-center mb-8 px-8">
           Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho
