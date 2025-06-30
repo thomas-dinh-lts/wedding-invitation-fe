@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://geocore-v2-public.s3.ap-southeast-1.amazonaws.com/4.webp"
+          content="https://random-bullshit-name.d3vmnsbm9tpbuf.amplifyapp.com/og_image.jpg"
         />
       </head>
       <body>
