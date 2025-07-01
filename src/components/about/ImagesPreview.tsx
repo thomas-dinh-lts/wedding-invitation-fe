@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 function ImagesPreview() {
   const dispatch = useAppDispatch();
+  const previewIdx = [2, 4, 15, 8];
 
   const onImageClicked = (idx: number) => {
     dispatch(setIsShowImagesGallery(true));
@@ -15,10 +16,10 @@ function ImagesPreview() {
 
   return (
     <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-      {IMAGES.slice(0, 4).map((image, idx) => (
+      {previewIdx.map((idx) => (
         <Image
-          key={image.original}
-          src={image.original}
+          key={IMAGES[idx].original}
+          src={IMAGES[idx].original}
           alt="Image"
           width={288}
           height={0}
