@@ -7,11 +7,11 @@ import InvitationForm from '@/components/invitation/InvitationForm';
 import { DateFormat, WEDDING_DATE, WEDDING_EVENTS } from '@/constants/date.constant';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import { Card, Col, Row } from 'antd';
-import { Lovers_Quarrel } from 'next/font/google';
+import { Great_Vibes } from 'next/font/google';
 import Image from 'next/image';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-const loversQuarrel = Lovers_Quarrel({
+const greatVibes = Great_Vibes({
   weight: '400',
   subsets: ['latin'],
 });
@@ -23,13 +23,13 @@ export default function Home() {
         <div className="h-full bg-[url(/header_background.webp)] bg-cover bg-center opacity-35" />
         <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center lg:flex-row mb-4 md:mb-8">
-            <span className={`${loversQuarrel.className} text-7xl md:text-8xl lg:text-9xl`}>
+            <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl`}>
               Phú Tùng
             </span>
             <span
-              className={`${loversQuarrel.className} text-7xl md:text-8xl lg:text-9xl whitespace-pre`}
+              className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl whitespace-pre`}
             >{` & `}</span>
-            <span className={`${loversQuarrel.className} text-7xl md:text-8xl lg:text-9xl`}>
+            <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl`}>
               Quỳnh Anh
             </span>
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <span className={`${loversQuarrel.className} text-9xl my-8`}>Events</span>
+        <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl my-8`}>Events</span>
         <CountdownClock to={WEDDING_DATE.toISOString()} />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
           {WEDDING_EVENTS.map((event) => (
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <span className={`${loversQuarrel.className} text-9xl text-center my-8`}>Invitation</span>
+        <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl text-center my-8`}>Invitation</span>
         <div className="italic max-w-144 lg:max-w-full text-xl text-center px-8">
           Sự hiện diện và tình cảm của mọi người là món quà vô giá, góp phần làm cho ngày cưới của
           chúng tôi thêm trọn vẹn và ý nghĩa.
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <span className={`${loversQuarrel.className} text-9xl text-center my-8`}>Gratitude</span>
+        <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl text-center my-8`}>Gratitude</span>
         <div className="relative w-72 md:w-144 md:text-justify">
           <Image
             src="/corner_decoration.svg"
@@ -124,7 +124,7 @@ export default function Home() {
         <Image src="/logo.svg" alt="Logo" fill />
       </div>
       <div className="flex flex-col items-center">
-        <span className={`${loversQuarrel.className} text-9xl my-8`}>Blessing</span>
+        <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl my-8`}>Blessing</span>
         <div className="italic max-w-144 lg:max-w-full text-xl text-center mb-8 px-8">
           Yêu thương đong đầy, xin gửi về đây.
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <span className={`${loversQuarrel.className} text-9xl text-center my-8`}>About us</span>
+        <span className={`${greatVibes.className} text-6xl md:text-7xl lg:text-8xl text-center my-8`}>About us</span>
         <div className="italic max-w-144 lg:max-w-full text-xl text-center mb-8 px-8">
           Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho
           bạn dũng khí.
