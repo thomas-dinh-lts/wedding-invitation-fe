@@ -5,3 +5,5 @@ export const IMAGES: ReactImageGalleryItem[] = Array.from({ length: 30 }, (_, id
   thumbnail: `https://geocore-v2-public.s3.ap-southeast-1.amazonaws.com/${idx + 1}.webp`,
   thumbnailClass: 'h-30 w-25 overflow-hidden',
 }));
+
+export const PREVIEW_IMAGES_IDX = [2, 4, 15, 8];

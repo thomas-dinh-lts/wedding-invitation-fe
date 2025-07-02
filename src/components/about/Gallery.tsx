@@ -21,14 +21,7 @@ function Gallery() {
   };
 
   return (
-    <Modal
-      open={isShowImagesGallery}
-      width={700}
-      onCancel={onCancel}
-      closeIcon={false}
-      footer={false}
-      centered
-    >
+    <Modal open={isShowImagesGallery} width={700} onCancel={onCancel} footer={false} centered>
       <ImageGallery
         items={IMAGES}
         showPlayButton={false}

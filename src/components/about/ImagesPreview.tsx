@@ -1,5 +1,5 @@
 'use client';
-import { IMAGES } from '@/constants/image.constant';
+import { IMAGES, PREVIEW_IMAGES_IDX } from '@/constants/image.constant';
 import { useAppDispatch } from '@/store/hooks';
 import { setGalleryStartIndex, setIsShowImagesGallery } from '@/store/reducers/app.reducer';
 import { Button } from 'antd';
@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 function ImagesPreview() {
   const dispatch = useAppDispatch();
-  const previewIdx = [2, 4, 15, 8];
 
   const onImageClicked = (idx: number) => {
     dispatch(setIsShowImagesGallery(true));
@@ -16,7 +15,7 @@ function ImagesPreview() {
 
   return (
     <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-      {previewIdx.map((idx) => (
+      {PREVIEW_IMAGES_IDX.map((idx) => (
         <Image
           key={IMAGES[idx].original}
           src={IMAGES[idx].original}
